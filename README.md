@@ -12,12 +12,12 @@
 ---
 
 ## فایل‌های دارای وظیفه
-- `config/student.php`: مقداردهی ثابت‌های `STUDENT_ID`, `STUDENT_NAME`, `STUDENT_SECRET_PHRASE` با اطلاعات واقعی خودتان.
-- `src/Product.php`: ساخت کلاس انتزاعی با سه ویژگی محافظت‌شده، سازنده، متدهای `getTitle()`, `getPrice()` و متد انتزاعی `getTypeLabel()`.
-- `src/Sellable.php`: تعریف interface با متد `getFinalPrice(): int`.
-- `src/Book.php`: پیاده‌سازی کلاس فرزند با سازنده، `getTypeLabel()` که باید رشتهٔ «کتاب» را برگرداند و `getFinalPrice()` با ۱۰٪ تخفیف.
-- `src/Notebook.php`: مشابه Book اما `getTypeLabel()` باید «دفتر» باشد و متد `getFinalPrice()` بدون تخفیف قیمت را برگرداند.
-- `public/index.php`: ساخت اشیا براساس داده‌های دیتابیس، پر کردن آرایه `$products` و استفاده از متدهای کلاس‌ها برای نمایش اطلاعات در صفحه‌ی فارسی.
+- فایل `config/student.php`: مقداردهی ثابت‌های `STUDENT_ID`, `STUDENT_NAME`, `STUDENT_SECRET_PHRASE` با اطلاعات واقعی خودتان.
+- فایل `src/Product.php`: ساخت کلاس انتزاعی با سه ویژگی محافظت‌شده، سازنده، متدهای `getTitle()`, `getPrice()` و متد انتزاعی `getTypeLabel()`.
+- فایل `src/Sellable.php`: تعریف interface با متد `getFinalPrice(): int`.
+- فایل `src/Book.php`: پیاده‌سازی کلاس فرزند با سازنده، `getTypeLabel()` که باید رشتهٔ «کتاب» را برگرداند و `getFinalPrice()` با ۱۰٪ تخفیف.
+- فایل `src/Notebook.php`: مشابه Book اما `getTypeLabel()` باید «دفتر» باشد و متد `getFinalPrice()` بدون تخفیف قیمت را برگرداند.
+- فایل `public/index.php`: ساخت اشیا براساس داده‌های دیتابیس، پر کردن آرایه `$products` و استفاده از متدهای کلاس‌ها برای نمایش اطلاعات در صفحه‌ی فارسی.
 
 ---
 
@@ -33,7 +33,7 @@
 ---
 
 ## سناریوی پروژه
-- فروشگاه شامل دو نوع محصول «کتاب» (`book`) و «دفتر» (`notebook`) است.
+- فروشگاه شامل دو نوع محصول «کتاب» (type = `book`) و «دفتر» (type = `notebook`) است.
 - فایل `db/db.php` داده‌ها را در آرایه `$rows` می‌ریزد.
 - شما باید با ایده‌های OOP، این داده‌ها را به اشیای `Book` و `Notebook` تبدیل کنید و به کمک متدهای کلاس، محتوای فارسی صفحه را بسازید.
 
