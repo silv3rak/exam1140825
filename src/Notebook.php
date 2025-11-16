@@ -9,23 +9,20 @@ require_once __DIR__ . '/Sellable.php';
  */
 class Notebook extends Product implements Sellable
 {
-    /**
-     * TODO(Task 4):
-     * Implement a constructor with the signature:
-     *
-     * public function __construct(int $id, string $title, int $price)
-     *
-     * It must assign the arguments to the protected properties.
-     */
+    public function __construct(int $id, string $title, int $price)
+{
+    $this->id = $id;
+    $this->title = $title;
+    $this->price = $price;
+}
 
-    /**
-     * TODO(Task 4):
-     * Implement getTypeLabel() so that it returns the exact Persian string "دفتر".
-     */
+public function getTypeLabel(): string
+{
+    return 'دفتر';
+}
+public function getFinalPrice(): int
+{
+    return $this->getPrice();
+}
 
-    /**
-     * TODO(Task 4):
-     * Implement getFinalPrice() so that it returns the original price without
-     * any discount.
-     */
 }
