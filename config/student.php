@@ -7,6 +7,6 @@ declare(strict_types=1);
  * هر دانشجو باید این مقادیر را با اطلاعات خودش کامل کند.
  */
 
-const STUDENT_ID = 'TODO_STUDENT_ID'; // مثال: "40123456"
-const STUDENT_NAME = 'TODO_FULL_NAME'; // مثال: "Sara Ahmadi"
-const STUDENT_SECRET_PHRASE = 'TODO_ONE_SHORT_UNIQUE_SENTENCE_IN_PERSIAN';
+const STUDENT_ID = "452516245"; // مثال: "40123456"
+const STUDENT_NAME = 'امیر عباس شفیعی'; // مثال: "Sara Ahmadi"
+const STUDENT_SECRET_PHRASE = 'noshabe yes family  lashy human no family 🚬';
