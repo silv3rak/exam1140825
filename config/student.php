@@ -9,4 +9,4 @@ declare(strict_types=1);
 
 const STUDENT_ID = "452516245"; // مثال: "40123456"
 const STUDENT_NAME = 'امیر عباس شفیعی'; // مثال: "Sara Ahmadi"
-const STUDENT_SECRET_PHRASE = 'noshabe yes family  lashy human no family 🚬';
+const STUDENT_SECRET_PHRASE = "em dey the see price odkolon, think human boye marefat give";
