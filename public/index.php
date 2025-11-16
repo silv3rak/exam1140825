@@ -16,12 +16,21 @@ require_once __DIR__ . '/../src/Notebook.php';
 
 $products = [];
 
-// TODO(Task 5):
-// Loop over $rows (fetched from the database) and create the correct
-// object type for each row:
-// - if $row['type'] === 'book'     → new Book(...)
-// - if $row['type'] === 'notebook' → new Notebook(...)
-// Then push each created object into the $products array.
+foreach ($rows as $row) {
+    if ($row['type'] === 'book') {
+        $products[] = new Book(
+            (int)$row['id'],
+            (string)$row['title'],
+            (int)$row['price']
+        );
+    } elseif ($row['type'] === 'notebook') {
+        $products[] = new Notebook(
+            (int)$row['id'],
+            (string)$row['title'],
+            (int)$row['price']
+        );
+    }
+}
 
 ?><!DOCTYPE html>
 
@@ -109,13 +118,13 @@ $products = [];
                             <div>
                                 <dt>قیمت پایه</dt>
                                 <dd class="product-price">
-                                    <!-- TODO(Task 6): echo the base price using getPrice() -->
+                                    <?php echo $product->getPrice(); ?>
                                 </dd>
                             </div>
                             <div>
                                 <dt>قیمت نهایی</dt>
                                 <dd class="product-final-price">
-                                    <!-- TODO(Task 6): echo the final price using getFinalPrice() -->
+                                    <?php echo $product->getFinalPrice(); ?>
                                 </dd>
                             </div>
                         </dl>
