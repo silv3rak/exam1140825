@@ -24,7 +24,7 @@ class Book extends Product implements Sellable
 public function getFinalPrice(): int
 {
     $price = $this->getPrice();
-    $discount = intdiv($price, 10);   // ده درصد قیمت
+    $discount = intdiv($price, 10);  
     return $price - $discount;
 }
 
